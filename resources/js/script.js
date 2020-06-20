@@ -10,6 +10,17 @@ $(document).ready(function () {
     },{
         offset:"60px"
     })
+    // FIXED NAVBAR
+    $(".js--section-billing").waypoint(function (direction) {
+        if (direction == "down") {
+            $(".js--nav").addClass("fixed")
+        } else {
+            $(".js--nav").removeClass("fixed")
+        }
+        
+    },{
+        offset:"60px"
+    })
 
 
 
@@ -23,6 +34,9 @@ $(document).ready(function () {
     })
     $(".link-offers").click(function () {
         $("html, body").animate({scrollTop: $(".js--section-offers").offset().top}, 1000)
+    })
+    $(".link-order").click(function () {
+        $("html, body").animate({scrollTop: $(".js--section-order").offset().top}, 1000)
     })
     $(".link-products").click(function () {
         $("html, body").animate({scrollTop: $(".js--section-products").offset().top}, 1000)
@@ -70,7 +84,7 @@ $(document).ready(function () {
     $(".js--anime-5").waypoint(function(direction){
         $(".js--anime-5").addClass("animated fadeIn")
     },{
-        offset: "70%"
+        offset: "90%"
     })
     $(".js--anime-6").waypoint(function(direction){
         $(".js--anime-6").addClass("animated fadeIn")
@@ -83,30 +97,49 @@ $(document).ready(function () {
         offset: "70%"
     })
 
+    // // INCREASE QUANTITY
+
+    // $(".add").on("click", function(){
+    //     $(".input").value++
+    // })
+
+    // $(".sub").on("click", function(){
+    //     if ($(".input").value >= 1) {
+    //         $(".input").value--
+    //     }else {
+    //         return false
+    //     }
+       
+    // })
+
 })
 
-// ADD LIST
-var addBtn = document.querySelector(".add_p")
-var type = document.querySelector("#input")
-var item = document.querySelector(".item")
-var ul = document.querySelector(".list")
+// VANILLA JS
+//INCREASE QUANTITY
+var inputv = document.querySelectorAll(".input") 
+var add = document.querySelectorAll(".add")
+var sub = document.querySelectorAll(".sub")
 
-
-function AddList() {
-    if (type.value.length > 0) {
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(type.value));
-        ul.appendChild(li);
-        type.value = "";
+function addno() {
+    for (let i = 0; i < inputv.length; i++) {
+        inputv[i].value++
     }
 }
-
-addBtn.addEventListener("click", AddList)
-type.addEventListener("keypress", function key(enter) {
-    if (type.value.length > 0 && enter.keyCode === 13) {
-        var li = document.createElement("li");
-        li.appendChild(document.createTextNode(type.value));
-        ul.appendChild(li);
-        type.value = "";
+function subno() {
+   for (let i = 0; i < inputv.length; i++) {
+    if (inputv[i].value >= 1) {
+        inputv[i].value--
+    }else {
+        return false
     }
-} )
+       
+   }
+   
+}
+
+for (let i = 0; i < add.length; i++) {
+    add[i].addEventListener("click", addno)     
+}
+for (let i = 0; i < sub.length; i++) {
+    sub[i].addEventListener("click", subno)    
+}

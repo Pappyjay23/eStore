@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="vendors/css/bootstrap.min.css">
+    <link rel="stylesheet" href="resources/fonts/regular/icofont.min.css">
+    <link rel="stylesheet" href="resources/fonts/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <title>eStore</title>
+</head>
+<body>
+    <header class="js--section-home">
+        <nav class="navbar navbar-expand-sm navbar-light js--nav">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="link-home logo-white" src="resources/img/eStore White.png" alt="White Logo"> </a>
+                <a class="navbar-brand" href="#"><img class="link-home logo-green" src="resources/img/e-Store Green.png" alt="Green Logo"> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="ti-menu js--menu-icon"></span>
+                  <!-- <span class="navbar-toggler-icon"></span> -->
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav mr-auto navbar-right">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">&MediumSpace;</a>
+                        </li>
+                      </ul>
+                  <ul class="navbar-nav nav-links navbar-right">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link link-about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link link-offers">Our Offers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link link-contact">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Order</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                          <a class="dropdown-item link-products" href="index.html">Products</a>
+                          <a class="dropdown-item link-billing" href="billing.html">Billing action</a>
+                        </div>
+                      </li>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="bottom" title="Shopping Cart">
+                        <a href="order.html" class="nav-link link-products"><i class="ti-shopping-cart" ></i></a>
+                    </li>
+                  </ul>
+                </div>  
+           </div>
+        </nav>
+
+        <div class="container">
+            <div class="row js--anime-1">
+                <div class="col-lg-7">
+                    <h1>&nbsp;</h1>
+                </div>
+                <div class="col-lg-5">
+                    <div class="header-text-box">
+                        <h1>Shopping Cart</h1>
+                        <a href="#" class="btn btn-full link-order"><i class="ti-angle-double-down"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section class="section-order js--section-order">
+        <div class="container">
+            <div class="row">
+                <h2>Order List</h2>
+            </div>
+            <div class="row js--anime-5">
+                <!-- <div class="col-lg-4">
+                    <input type="text" placeholder="Add Product" id="input">
+                    <input type="submit" value="Add" class="add_p">
+                    <ul class="list">
+                       <li>Cap</li> 
+                       <li>Sandal</li> 
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+            </div> -->
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                      <thead>
+                        <tr>
+                          <th>S/N</th>
+                          <th>Product</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Remove</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Face Cap</td>
+                          <td>$40.00</td>
+                          <td> <i class="ti-plus add" title="Add"></i>   <input type="text" class="input" value="0" min="0" max="10">  <i class="ti-minus sub" title="Subtract"></i></td>
+                          <td><a href="#"><i class="ti-trash" title="Remove"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Sneakers</td>
+                          <td>$50.00</td>
+                          <td> <i class="ti-plus add" title="Add"></i>   <input type="text" class="input" value="0" min="0" max="10">  <i class="ti-minus sub" title="Subtract"></i></td>
+                          <td><a href="#"><i class="ti-trash" title="Remove"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Belt</td>
+                          <td>$10.00</td>
+                          <td> <i class="ti-plus add" title="Add"></i>   <input type="text" class="input" value="0" min="0" max="10">  <i class="ti-minus sub" title="Subtract"></i></td>
+                          <td><a href="#"><i class="ti-trash" title="Remove"></i></a></td>
+                        </tr>
+                        <tr>
+                          <td>4</td>
+                          <td>Shorts</td>
+                          <td>$50.00</td>
+                          <td> <i class="ti-plus add" title="Add"></i>   <input type="text" class="input" value="0" min="0" max="10">  <i class="ti-minus sub" title="Subtract"></i></td>   
+                          <td><a href="#"><i class="ti-trash" title="Remove"></i></a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+        
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="vendors/js/jquery-3.5.1.min.js"></script>
+    <script src="vendors/js/bootstrap.min.js"></script>
+    <script src="vendors/js/popper.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+</body>
+</html>

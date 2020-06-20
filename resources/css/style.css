@@ -159,6 +159,16 @@ html, body {
             width: 100%;
             margin: 10px auto;
         }
+        input[type="text"]::placeholder,
+        input[type="tel"]::placeholder, 
+        textarea::placeholder, 
+        input[type="email"]::placeholder {
+            width: 100%;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 80%;
+
+        }
     }
 
     
@@ -382,13 +392,18 @@ html, body {
     }
 
 
-    input[type="number"] {
+    .div-cart-links input[type="number"] {
         width: 35%;
         margin: 5px 30%;
         border: 1px solid #fcfcfc;
         border-radius: 3px;
         font-size: 80%;
         padding: 3px;
+        display: inline-block;
+    }
+
+    .div-cart-links i {
+        font-size: 80%;
     }
 
 /* SECTION PRODUCTS */
@@ -407,7 +422,7 @@ html, body {
     }
 
     .section-order input[type="text"]{
-        width: 70%;
+        width: 10%;
         display: inline-block;
     }
 
@@ -415,6 +430,31 @@ html, body {
         background-color: #17bed2 ;
         color: #fff;
         cursor: pointer;
+    }
+
+    td,th {
+        text-align: center;
+    }
+
+    .table td, .table th {
+        vertical-align: middle;
+    }
+
+    td i {
+        font-size: 80%;
+        margin: 0 10px;
+        cursor: pointer;
+    }
+    .ti-trash {
+        font-size: 150%;
+    }
+    .ti-trash:hover {
+        color: red;
+        /* color: rgb(199, 0, 0); */
+    }
+
+    table {
+        font-size: 80%;
     }
 
 /* SECTION ORDER */
