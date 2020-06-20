@@ -422,7 +422,8 @@ html, body {
     }
 
     .section-order input[type="text"]{
-        width: 10%;
+        width: 50%;
+        /* margin: 0 auto; */
         display: inline-block;
     }
 
