@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // FIXED NAVBAR
+    // FIXED NAVBAR HOME
     $(".js--section-about").waypoint(function (direction) {
         if (direction == "down") {
             $(".js--nav").addClass("fixed")
@@ -10,8 +10,19 @@ $(document).ready(function () {
     },{
         offset:"60px"
     })
-    // FIXED NAVBAR
+    // FIXED NAVBAR BILLING
     $(".js--section-billing").waypoint(function (direction) {
+        if (direction == "down") {
+            $(".js--nav").addClass("fixed")
+        } else {
+            $(".js--nav").removeClass("fixed")
+        }
+        
+    },{
+        offset:"60px"
+    })
+    // FIXED NAVBAR ORDER
+    $(".js--section-order").waypoint(function (direction) {
         if (direction == "down") {
             $(".js--nav").addClass("fixed")
         } else {
