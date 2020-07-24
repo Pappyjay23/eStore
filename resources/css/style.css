@@ -113,6 +113,30 @@ html, body {
         position: relative;
     }
 
+    input[type="search"] {
+        color: #212529;
+        border: 0;
+        font-size: 90%;
+        letter-spacing: 1px;
+    }
+    input[type="search"]:focus {
+        outline: 0;
+    }
+
+    .search-bar{
+        background-color: #fff;
+        padding: 4px 5px;
+        border-radius: 5px;
+        color: #212529;
+        border: 2px solid #4dedff;
+
+    }
+
+    /* .ti-plus {
+        font-size: 70%;
+        margin: 0 2px;
+    } */
+
 
     .nav-links li a:link,
     .nav-links li a:visited {
@@ -278,6 +302,11 @@ html, body {
     background-color: #25d8ec;
     width: 60%;
     
+}
+
+.fixed .search-bar{
+    border: 2px solid rgb(109, 250, 255);
+
 }
 
 /* FIXED NAV */
@@ -554,6 +583,80 @@ footer a:active {
 }
 
 /* FOOTER */
+
+/* SECTION SIGN IN */
+    .section-s-in {
+        overflow-x: hidden;
+        background-color: #efefef;
+        height: 100%;
+    }
+
+    .form-box {
+        background-color: #25d8ec;
+        border-radius: 10px;
+        width: 80%;
+        margin: 0 10%;
+        padding: 50px 0;
+        color: #fff;
+    }
+
+    .form-box .row {
+        margin-bottom: 5px;
+    }
+
+    .form-box input[type="text"],
+    .form-box input[type="email"],
+    .form-box input[type="password"] {
+        letter-spacing: 1px;
+        font-size: 90%;
+        font-weight: 300;
+        border-radius: 5px;
+        border: 1px solid #efefef;
+        width: 100%;
+        outline: 0;
+        padding: 7px;
+    }
+
+    .form-box input[type="checkbox"] {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .form-box input[type="checkbox"]:focus {
+        outline: 0;
+    }
+
+    .form-box label {
+        padding: 10px 0;
+    }
+
+    .form-content{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .form-heading {
+        width: 50%;
+        margin: 20px 25%;
+        text-align: center;
+    }
+
+    .form-box img {
+        height: 30px;
+        width: auto;
+        display: inline-block;
+    }
+
+    .form-header {
+        font-size: 150%;
+        font-weight: 500;
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        /* text-transform: uppercase; */
+        /* text-align: center; */
+        /* width: 100%; */
+    }
+
+/* SECTION SIGN IN */
 
 /* ANIMATIONS */
 .js--anime-1,

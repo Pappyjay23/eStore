@@ -133,7 +133,7 @@ var sub = document.querySelectorAll(".sub")
 
 function addno() {
     for (let i = 0; i < inputv.length; i++) {
-        inputv[i].value++
+        inputv[i].value ++
     }
 }
 function subno() {
