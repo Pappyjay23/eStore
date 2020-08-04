@@ -1,6 +1,6 @@
 $(document).ready(function () {
     // FIXED NAVBAR HOME
-    $(".js--section-about").waypoint(function (direction) {
+     $(".js--section-about").waypoint(function (direction) {
         if (direction == "down") {
             $(".js--nav").addClass("fixed")
         } else {
